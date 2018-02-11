@@ -5,7 +5,7 @@
 * { margin: 0; box-sizing: border-box; }
 
 body {
-    font-size: 1rem;
+    font-size: 16px;
     line-height: 32px;
     font-family: Ubuntu, sans-serif;
     color: #00007B;
@@ -25,7 +25,7 @@ h2 {
 header, main, footer {
     margin: 1.25rem auto;
     padding: .5em;
-/*    max-width: 960px; */
+    max-width: 960px;
 }
 
 header, footer, footer a {

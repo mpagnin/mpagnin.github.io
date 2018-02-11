@@ -1,0 +1,134 @@
+@media only screen and (min-width: 37.5rem) {
+    /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+
+    .imglogo {
+        width: 25%;
+    }
+    header {
+        margin: 0 0 1rem 0;
+    }
+    header h1 {
+        font-size: 1.8rem;
+    }
+    header .subheading {
+        padding: .7rem 0 .6rem 0;
+        font-size: 1.1rem;
+    }
+    .headcont {
+        max-width: 100%;
+        display: flex;
+    }
+    nav ul {
+        display: block;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        height: 2.8rem;
+        background-color: #0D5EF3;
+        width: auto;
+        overflow: hidden;
+        border: 0.15rem solid #FFF;
+    }
+    nav ul li {
+        font-family: "Raleway", sans-serif;
+        font-size: 1.1rem;
+        text-align: center;
+        float: left;
+        border-right: .15rem solid #FFF;
+    }
+/*    nav ul li:last-child {
+        border-right: none;
+    } */
+    nav ul li a {
+        display: block;
+        padding:
+            .6rem .48rem;
+        color: #FFF;
+        background-color: #0D5EF3;
+        text-decoration: none;
+    }
+    nav ul li.active a {
+        background-color: #2D11F4;
+        color: #FFF;
+    }
+    nav ul li a:hover {
+        background-color: #BED1F5;
+        color: #0D5EF3;
+    }
+
+    nav button { display:none; }  /* hamburger button does not need to be shown */
+
+    main figure {
+        max-width: 50%;
+        float: left;
+        margin: 0;
+        padding: 1rem 2% 1rem 2%;
+    }
+    .highlow {
+        margin: 0;
+        display: block;
+    }
+    .highlow .hlcont {
+        margin: 0 25%;
+        display:flex;
+        justify-content: space-around;
+    }
+    .highlow .hlcont p {
+        margin: 0.2rem 0;
+    }
+    .current {
+        margin: 0;
+        flex-direction: row-reverse;
+    }
+    .conditions {
+        margin: 0;
+    }
+    section {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    section h3 {
+        order: -2;
+    }
+    .current {
+        order: -1;
+    }
+    /* show the 10-day forecast with the medium view and up */
+    section.forecast {
+        display: block;
+        align-items: center;
+    }
+    table {
+        table-layout: fixed;
+        margin: auto;
+        width: 96%;
+        caption-side: top;
+    }
+    caption {
+        background-color: #FFE8C0;
+    }
+    caption h3 {
+        margin: .5rem;
+    }
+    table, caption, th, td {
+        border: 0.15rem solid #000;
+        border-collapse: collapse;
+    }
+    th, td {
+        padding: 0.3rem 0;
+    }
+
+    /* responsive images */
+    article p.town-article picture {
+        width: 47%;
+        float: right;
+        padding: 0 0.2rem;
+    }
+    article p.town-article picture img {
+        max-width: 100%;
+        margin: 0;
+    }
+    article {
+        margin-bottom: 10rem;
+    }
+}
