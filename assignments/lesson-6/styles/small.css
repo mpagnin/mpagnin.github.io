@@ -1,6 +1,6 @@
 /* This main css file contains the default rules and is geared toward the small/phone view */
 
-* { box-sizing: border-box;}  /* This wildcard applies to all elrements ensuring a box layout model */
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
 
 html {
     font-size: 100%;
@@ -19,16 +19,21 @@ header, nav, main, footer { /* the comma means apply the following CSS declarati
 
 
 header {
+    padding: .5rem 2% 1rem 2%;
     margin: 0;
     line-height: 1;
     font-family: "Raleway", sans-serif;
 }
-.imglogo {
+figure {
+    margin: 0;
+}
+header figure.imglogo {
     float: left;
     width: 30%;
-    padding: 0 .5rem .2rem 0;
+    margin: 0;
+    padding: 0 2% 0 0;
 }
-img.imglo {
+header figure.imglogo img {
     max-width: 100%;
     height: auto;
 }
@@ -41,15 +46,42 @@ header .subheading {
     font-size: .9rem;
 }
 
-nav {}
-nav button {}
+nav {
+    background-color: #0D5EF3;
+    font-family: "Raleway", sans-serif;
+}
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #555;
+}
 nav ul {
-    display: none;
+    /*display: none;*/
+    list-style-type:none;
+    padding: 0;
+    margin:0;
 }
 nav ul li {}
-nav ul li a {}
-nav ul li.active a {}
-nav ul li a:hover {}
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #FFF;
+    border-top: 1px solid rgba(0,0,0,0.3);
+}
+nav ul li.active a {
+    background-color: #2D11F4;
+    color: #FFF;
+}
+nav ul li a:hover {
+    background-color: #BED1F5;
+    color: #0D5EF3;
+}
+nav ul.hide {
+    display: none;
+}
 
 main {}
 main h2 {
@@ -62,7 +94,7 @@ main h3 {
 }
 main figure {
     margin: 0 0 .2rem 0;
-    width:100%;
+    max-width: 100%;
 }
 main figure img {
     max-width: 100%;
@@ -115,15 +147,17 @@ section {
 article h3 {
     text-align: center;
 }
-.town-article {
+ .town-article {
     margin: 1rem 2% 2% 2%;
+    max-width: 100%;
 }
 article .town-article img {  /* This structure refers to img elrements that are the posterity of paragraph elrements within artcle elrements */
-    min-width: 100%; /* fill the page in the small/phone view */
+    max-width: 100%; /* fill the page in the small/phone view */
     margin: 0 0 .5rem 0;
 }
 
 footer {
+    display: block;
     background-color: #0D5EF3;
     color: #FFF;
     text-align: center;
@@ -156,3 +190,8 @@ footer>p {
 } /* This structure refers to p elrements that are direct children of the footer elrement */
 
 /* Other Class Selectors */
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
