@@ -1,0 +1,197 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-size: 16px;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    /* Declare the base font-family - from google font api or other */
+}
+
+header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elrements */
+    width: 100%;
+}
+
+
+header {
+    padding: .5rem 2% 1rem 2%;
+    margin: 0;
+    line-height: 1;
+    font-family: "Raleway", sans-serif;
+}
+figure {
+    margin: 0;
+}
+header figure.imglogo {
+    float: left;
+    width: 30%;
+    margin: 0;
+    padding: 0 2% 0 0;
+}
+header figure.imglogo img {
+    max-width: 100%;
+    height: auto;
+}
+header h1 {
+    margin: 0;
+    font-size: 1.1rem;
+}
+header .subheading {
+    padding: .3rem 0 0 0;
+    font-size: .9rem;
+}
+
+nav {
+    background-color: #0D5EF3;
+    font-family: "Raleway", sans-serif;
+}
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #555;
+}
+nav ul {
+    /*display: none;*/
+    list-style-type:none;
+    padding: 0;
+    margin:0;
+}
+nav ul li {}
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #FFF;
+    border-top: 1px solid rgba(0,0,0,0.3);
+}
+nav ul li.active a {
+    background-color: #2D11F4;
+    color: #FFF;
+}
+nav ul li a:hover {
+    background-color: #BED1F5;
+    color: #0D5EF3;
+}
+nav ul.hide {
+    display: none;
+}
+
+main {}
+main h2 {
+    font-family: "Raleway", sans-serif;
+    font-size: 1.6rem;
+    text-align: center;
+}
+main h3 {
+    font-family: "Raleway", sans-serif;
+}
+main figure {
+    margin: 0 0 .2rem 0;
+    max-width: 100%;
+}
+main figure img {
+    max-width: 100%;
+}
+
+section {
+    text-align: center;
+}
+
+.highlow {
+    margin: 0 20%;
+    display: flex;
+    justify-content: space-around;
+}
+.highlow .hlcont p {
+    margin: 0;
+}
+.highlow .hlcont {
+    display: flex;
+}
+.current {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.current h3 {
+    font-size: 1.6rem;
+    margin-right: 1rem;
+}
+.current picture {
+    width: 20%;
+    margin: 0 .5rem 0 .5rem;
+}
+.current picture img {
+    max-width: 100%;
+}
+.conditions .hlcont{
+    margin: 0 25%;
+    display: flex;
+    justify-content: space-around
+}
+ .conditions .hlcont p {
+    margin: 0.2rem 0;
+}
+
+.forecast {
+    display: none;
+}
+article h3 {
+    text-align: center;
+}
+ .town-article {
+    margin: 1rem 2% 2% 2%;
+    max-width: 100%;
+}
+article .town-article img {  /* This structure refers to img elrements that are the posterity of paragraph elrements within artcle elrements */
+    max-width: 100%; /* fill the page in the small/phone view */
+    margin: 0 0 .5rem 0;
+}
+
+footer {
+    display: block;
+    background-color: #0D5EF3;
+    color: #FFF;
+    text-align: center;
+}
+footer aside {
+    padding: .5rem 0;
+    background-color: #BED1F5;
+    color:#0D5EF3;
+}
+footer h5, footer h6 {
+    margin: .3rem 0;
+}
+footer h5 {
+    font-size: 1rem;
+}
+footer h6 {
+    font-size: .9rem;
+}
+footer aside a {
+    color: #2D11F4;
+    text-decoration: none;
+}
+.footer-bar {
+    padding: 1rem 0;
+    margin: 0;
+}
+footer>p {
+    font-family: "Raleway", sans-serif;
+    font-size: .65rem;
+} /* This structure refers to p elrements that are direct children of the footer elrement */
+
+/* Other Class Selectors */
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
