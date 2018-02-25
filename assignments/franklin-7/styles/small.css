@@ -23,12 +23,14 @@ header {
     margin: 0;
     line-height: 1;
     font-family: "Raleway", sans-serif;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
 figure {
     margin: 0;
 }
 header figure.imglogo {
-    float: left;
     width: 30%;
     margin: 0;
     padding: 0 2% 0 0;
@@ -37,6 +39,10 @@ header figure.imglogo img {
     max-width: 100%;
     height: auto;
 }
+header .txtlogo {
+    display: flex;
+    flex-direction: column;
+    }
 header h1 {
     margin: 0;
     font-size: 1.1rem;
@@ -71,19 +77,23 @@ nav ul li a {
     color: #FFF;
     border-top: 1px solid rgba(0,0,0,0.3);
 }
-nav ul li.active a {
-    background-color: #2D11F4;
-    color: #FFF;
-}
+
 nav ul li a:hover {
     background-color: #BED1F5;
     color: #0D5EF3;
+}
+/*nav ul li.active a { */
+nav ul li a:active {
+    background-color: #2D11F4;
+    color: #FFF;
 }
 nav ul.hide {
     display: none;
 }
 
-main {}
+main {
+    padding: 2%;
+}
 main h2 {
     font-family: "Raleway", sans-serif;
     font-size: 1.6rem;
@@ -93,7 +103,6 @@ main h3 {
     font-family: "Raleway", sans-serif;
 }
 main figure {
-    margin: 0 0 .2rem 0;
     max-width: 100%;
 }
 main figure img {
@@ -155,6 +164,14 @@ article .town-article img {  /* This structure refers to img elrements that are 
     max-width: 100%; /* fill the page in the small/phone view */
     margin: 0 0 .5rem 0;
 }
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 1rem;
+    grid-row-gap: 2rem;
+}
+
 
 footer {
     display: block;

@@ -1,3 +1,5 @@
+/*var currdate = document.getElementById("currdate");*/
+/*var currdate;*/
 var d = new Date();
 var weekday = new Array(7);
 weekday[0] = "Sunday";
@@ -19,3 +21,4 @@ if (mm < 10) {
 }
 var today = n + ', ' + mm + '/' + dd + '/' + yyyy;
 document.getElementById("currdate").innerHTML = today;
+/*currdate.innerHTML = today;*/

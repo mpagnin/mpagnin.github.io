@@ -24,7 +24,7 @@
     }  /* hamburger button does not need to be shown */
 
     nav ul.hide {
-        display: block;
+        display: flex;
     }
 
     nav ul {
@@ -41,11 +41,13 @@
     }
 
     nav ul li {
+        flex-direction: row;
+        flex-wrap: nowrap;
  /*       font-family: "Raleway", sans-serif;
         font-size: 1.1rem;
         text-align: center;
         border-right: .15rem solid #FFF;*/
-        float: left;
+/*        float: left; */
     }
 /*    nav ul li:last-child {
         border-right: none;
@@ -61,16 +63,20 @@
         border-right: 1px solid rgba(0,0,0,0.3);
         padding: .8rem 0.7rem;
     }
-    nav ul li.active a {
-/*        background-color: #2D11F4;
-        color: #FFF;*/
-    }
+
     nav ul li a:hover {
 /*        background-color: #BED1F5;
         color: #0D5EF3;*/
     }
+    nav ul li.active a {
+        /*        background-color: #2D11F4;
+        color: #FFF;*/
+    }
 
-    main figure {
+    main {
+        margin: 0 0 1rem 0;
+    }
+    main figure.medfig {
         max-width: 50%;
         float: left;
         margin: 0;
@@ -136,4 +142,7 @@
         float:right;
     }
 
+    main figure.gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }

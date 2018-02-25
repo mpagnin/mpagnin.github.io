@@ -28,8 +28,10 @@
                     images/logo-awf.png 2x,
                     images/logo-awf.png 3x">
             </figure>
-            <h1>Accurate Weather Forecasts</h1>
+            <div class="txtlogo">
+                <h1>Accurate Weather Forecasts</h1>
                 <div class="subheading">Timely information about the weather in your city</div>
+            </div>
         </header>
 
         <!-- site navigation use placeholder references -->
@@ -37,17 +39,17 @@
             <button onclick="toggleNavMenu()">&#9776;</button>
             <ul id="primaryNav" class="hide">
                 <li><a href="#">Home</a></li>
-                <li class="active"><a href="#">Franklin</a></li>
+                <li class="active"><a href="index.html">Franklin</a></li>
                 <li><a href="#">Greenville</a></li>
                 <li><a href="#">Springfield</a></li>
                 <li><a href="#">Storm Center</a></li>
-                <li><a href="#">Gallery</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
             </ul>
         </nav>
 
         <main>
             <h2>The City of Franklin</h2>
-            <figure>
+            <figure class="medfig">
                 <picture>
                     <source media="(min-width:64em)" srcset="images/franklin-large.jpg">
                     <source media="(min-width:37.5em)" srcset="images/franklin-medium.jpg">
@@ -58,12 +60,10 @@
                 <h3>Weather Summary</h3>
                 <div class="highlow">
                     <div class="hlcont">
-                        <p>High:&nbsp;</p>
-                        <p>Htemp</p>
+                        <p>High:&nbsp;<span id="hTemp"></span>°F</p>
                     </div>
                     <div class="hlcont">
-                        <p>Low:&nbsp;</p>
-                        <p>Ltemp</p>
+                        <p>Low:&nbsp; <span id="lTemp"></span>°F</p>
                     </div>
                 </div>
                 <div class="current">
@@ -74,12 +74,14 @@
                 </div>
                 <div class="conditions">
                     <div class="hlcont">
-                        <p>Precipitation:&nbsp;</p>
-                        <p>Qprec</p>
+                        <p>Precipitation:&nbsp; <span id="valPrec">0</span>%</p>
                     </div>
                     <div class="hlcont">
-                        <p>Wind Speed:&nbsp;</p>
-                        <p>mpgSW</p>
+                        <p>Wind Speed:&nbsp; <span id="sWind"></span>mpg SW</p>
+                    </div>
+                    <div class="hlcont">
+                      <!--  <button type="button" onclick="windChill()">Wind Chill</button> -->
+                        <p>Wind Chill:&nbsp; <span id="wChill"></span>°F</p>
                     </div>
                 </div>
             </section>
@@ -105,7 +107,7 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>89&deg;F</td>
+                            <td id="hTemp">89&deg;F</td>
                             <td>87&deg;F</td>
                             <td>78&deg;F</td>
                             <td>75&deg;F</td>
@@ -128,7 +130,11 @@
                         <source media="(min-width:37.5em)" srcset="images/pexels-photo-280221-m.jpg">
                         <img src="images/pexels-photo-280221-s.jpg" alt="Picture of view from Franklin city">
                     </picture>
-                    short article content placeholder short article content placeholder short article content placeholder short article content placeholder short article content placeholder short article content placeholder short article content placeholder short article content placeholder short article content placeholder short article content placeholder short article content placeholder short article content placeholder
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget sapien ultricies, auctor leo nec, consequat est. Duis at semper tellus. Sed id scelerisque eros. Nulla consectetur facilisis enim eu volutpat. In nec nisi lobortis, iaculis ligula non, fermentum dolor. Phasellus quis mi quis velit volutpat fermentum. Maecenas pretium libero arcu, in imperdiet eros egestas a.
+
+                    Pellentesque lacinia cursus nulla in tincidunt. Integer placerat sem eu erat vestibulum, finibus ullamcorper lectus cursus. Aenean in vestibulum nisi. Praesent viverra nibh sapien, auctor faucibus orci lacinia at. Mauris tincidunt gravida augue, sed eleifend sem rutrum ac. Aliquam lectus mauris, gravida sagittis augue eu, porttitor tempus sem. Quisque non blandit mi. Fusce tristique vel nisi at consectetur. Quisque a ornare ex.
+
+                    Ut in ipsum sit amet lorem dignissim pellentesque. Ut nec cursus nisl. Vivamus tincidunt blandit tortor, eu pulvinar diam facilisis sed. Morbi faucibus dui ligula, ac maximus enim elementum non. Donec varius felis vel ipsum vestibulum, id lobortis purus mollis. Suspendisse accumsan varius enim. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In venenatis tincidunt ultrices. Donec non tellus quam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi accumsan nunc leo, eu pretium ligula pretium eu. Nam quis volutpat nisl.
                 </p>
             </article>
 
@@ -150,6 +156,7 @@
 
 <script src="scripts/currentdate.js"></script>
 <script src="scripts/hamburger.js"></script>
+<script src="scripts/windchill.js"></script>
 
 
     </body>
