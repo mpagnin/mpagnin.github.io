@@ -12,7 +12,25 @@
     main figure img {
         max-width: 100%;
     }
-   article p.town-article img {
+    section {
+        margin: 2%;
+    }
+    section .summary {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .highlow {
+        margin: 0;
+    }
+    .highlow .hlcont {
+        margin: 0;
+    }
+    .conditions .hlcont {
+        margin: 0;
+    }
+    article p.town-article img {
        width: 29.333%;
     }
     main figure.gallery {
