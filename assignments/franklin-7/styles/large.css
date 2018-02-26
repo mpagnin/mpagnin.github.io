@@ -33,10 +33,10 @@
     article p.town-article img {
        width: 29.333%;
     }
-    main figure.gallery {
+    main .gallery {
         grid-template-columns: repeat(3, 1fr);
     }
-    main figure.gallery picture:hover {
+    main .gallery figure:hover {
         box-shadow: 3px 3px 10px 5px #0D5EF3;
     }
 }

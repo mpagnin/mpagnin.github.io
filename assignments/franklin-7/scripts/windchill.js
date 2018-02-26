@@ -7,9 +7,9 @@
     var tempH = 91;
     var tempL = 68;
     var speed = 6;
-    document.getElementById("hTemp").innerHTML = tempH;
-    document.getElementById("lTemp").innerHTML = tempL;
-    document.getElementById("sWind").innerHTML = speed;
+    document.getElementById("cHTemp").innerHTML = tempH;
+    document.getElementById("cLTemp").innerHTML = tempL;
+    document.getElementById("cSWind").innerHTML = speed;
     var tempF = ((tempH + tempL) / 2);
     var wwChill = Math.round((35.74 + ( 0.6215 * tempF) - (35.75 * Math.pow(speed, 0.16)) + (0.4275 * tempF * Math.pow(speed, 0.16))));
-    document.getElementById("wChill").innerHTML = wwChill;
+    document.getElementById("cWChill").innerHTML = wwChill;

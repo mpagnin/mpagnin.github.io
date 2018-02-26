@@ -103,7 +103,7 @@
         width: 62.666%;
         float:right;
     }
-    main figure.gallery {
+    main .gallery {
         grid-template-columns: repeat(2, 1fr);
     }
 }
