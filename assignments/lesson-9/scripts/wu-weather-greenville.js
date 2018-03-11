@@ -1,14 +1,13 @@
-// JavaScript Document - Weather Data of Franklin MN
+// JavaScript Document - Weather Data of Greenville MN
 
-var requestURL = 'http://api.wunderground.com/api/a97326148f4b275e/conditions/forecast/q/MN/Franklin.json';
-var request = new XMLHttpRequest();
+var weatherObject = new XMLHttpRequest();
 
-request.open('GET', requestURL, true);
+weatherObject.open('GET', 'http://api.wunderground.com/api/897a29e35828f725/conditions/forecast/q/MN/Greenville.json', true);
 
-request.send();
+weatherObject.send();
 
-request.onload = function() {
-    var weatherInfo = JSON.parse(request.responseText);
+weatherObject.onload = function() {
+    var weatherInfo = JSON.parse(weatherObject.responseText);
     console.log(weatherInfo);
     document.getElementById('cHTemp').innerHTML = weatherInfo.forecast.simpleforecast.forecastday["0"].high.fahrenheit;
     document.getElementById('cLTemp').innerHTML = weatherInfo.forecast.simpleforecast.forecastday["0"].low.fahrenheit;

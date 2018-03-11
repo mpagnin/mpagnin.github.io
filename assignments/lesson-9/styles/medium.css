@@ -106,7 +106,21 @@
     /* responsive images */
     article p.town-article img {
         width: 62.666%;
-        float:right;
+        float: right;
+    }
+    article .town-article picture {
+        margin-left: 2%;
+    }
+    section.townSect {
+        display: flex;
+        flex-direction: row;
+    }
+    section.townSect picture {
+        max-width: 50%;
+        margin-right: 2%;
+    }
+    section.town-data {
+        margin-left: 2%;
     }
     main .sgrid {
         grid-template-columns: repeat(2, 1fr);

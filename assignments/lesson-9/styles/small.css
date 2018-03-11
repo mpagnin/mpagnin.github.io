@@ -151,6 +151,26 @@ section.sgrid img {
 section.sgrid article {
     box-shadow: 3px 3px 8px 3px #a9a9a9;
 }
+article.clearfix {
+    margin: 2%;
+}
+
+section.townSect {
+    display: flex;
+    flex-direction: column;
+}
+section.townSect img {
+    max-width: 100%;
+}
+section.town-data h4 {
+    margin: 0.5rem 0;
+}
+section.town-data p {
+    margin: 0.3rem 0;
+}
+section.town-data ul{
+    margin: .3rem 0 .5rem 0;
+}
 .highlow {
     margin: 0;
     display: flex;
@@ -187,7 +207,9 @@ section.sgrid article {
  .conditions .hlcont p {
     margin: 0.2rem 0;
 }
-
+.shortForecast {
+    text-align: center;
+}
 .forecast {
     display: none;
 }
@@ -198,9 +220,10 @@ article h3 {
     margin: 1rem 2% 2% 2%;
     max-width: 100%;
 }
+
 article .town-article img {  /* This structure refers to img elrements that are the posterity of paragraph elrements within artcle elrements */
     max-width: 100%; /* fill the page in the small/phone view */
-    margin: 0 0 .5rem 0;
+    margin: 0 0 0.5rem 0;
 }
 
 .sgrid {

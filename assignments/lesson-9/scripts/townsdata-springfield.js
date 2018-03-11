@@ -12,7 +12,7 @@ request.onload = function() {
     showDataTowns(dataTowns);
 
     function showDataTowns(jsonObj) {
-        var i = 0;
+        var i = 3;
         var towns = jsonObj['towns'];
         var myArticle = document.createElement('article');
         var myH4 = document.createElement('h4');
