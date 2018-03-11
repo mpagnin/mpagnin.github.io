@@ -1,0 +1,42 @@
+@media only screen and (min-width: 64em) {
+    /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+
+    nav ul li a {
+        padding: .6rem 1rem;
+    }
+
+    main figure.medfig {
+        max-width: 100%;
+        float: none;
+    }
+    main figure img {
+        max-width: 100%;
+    }
+    section {
+        margin: 2%;
+    }
+    section .summary {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .highlow {
+        margin: 0;
+    }
+    .highlow .hlcont {
+        margin: 0;
+    }
+    .conditions .hlcont {
+        margin: 0;
+    }
+    article p.town-article img {
+       width: 29.333%;
+    }
+    main .sgrid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    main .sgrid figure:hover {
+        box-shadow: 3px 3px 10px 5px #0D5EF3;
+    }
+}

@@ -1,0 +1,114 @@
+@media only screen and (min-width: 37.5rem) {
+    /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+
+    header figure.imglogo {
+        width: 25%;
+    }
+    header {
+        margin: 0 0 1rem 0;
+    }
+    header h1 {
+        font-size: 1.8rem;
+    }
+    header .subheading {
+        padding: .7rem 0 .6rem 0;
+        font-size: 1.1rem;
+    }
+    .headcont {
+        max-width: 100%;
+        display: flex;
+    }
+    nav button {
+        display:none;
+    }  /* hamburger button does not need to be shown */
+    nav ul.hide {
+        display: flex;
+    }
+    nav ul {
+        margin-left: 2%;
+    }
+    nav ul li {
+        flex-direction: row;
+        flex-wrap: nowrap;
+     }
+    nav ul li a {
+        border: none;
+        border-right: 1px solid rgba(0,0,0,0.3);
+        padding: .8rem 0.7rem;
+    }
+    main {
+        margin: 0 0 1rem 0;
+    }
+    main figure.medfig {
+        max-width: 50%;
+        float: left;
+        margin: 0;
+        padding: 0 2% 0 2%;
+    }
+    .highlow {
+        margin: 0;
+        display: block;
+    }
+    .highlow .hlcont {
+        margin: 0;
+        display: flex;
+        justify-content: space-around;
+    }
+    .highlow .hlcont p {
+        margin: 0.2rem 0;
+    }
+    .current {
+        margin: 0;
+        flex-direction: row-reverse;
+    }
+    .conditions {
+        margin: 0;
+    }
+    .shortForecast .hlcont {
+        text-align: center;
+    }
+    section {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    section h3 {
+        order: -2;
+    }
+    .current {
+        order: -1;
+    }
+    /* show the 10-day forecast with the medium view and up */
+    section.forecast {
+        padding: 1rem 0;
+        display: block;
+        align-items: center;
+    }
+    table {
+        table-layout: fixed;
+        margin: auto;
+        width: 96%;
+        caption-side: top;
+    }
+    caption {
+        background-color: #FFE8C0;
+    }
+    caption h3 {
+        margin: .5rem;
+    }
+    table, caption, th, td {
+        border: 0.15rem solid #000;
+        border-collapse: collapse;
+    }
+    th, td {
+        text-align: center;
+        padding: 0.3rem 0;
+    }
+    /* responsive images */
+    article p.town-article img {
+        width: 62.666%;
+        float:right;
+    }
+    main .sgrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

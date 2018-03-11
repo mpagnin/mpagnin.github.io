@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Accurate Weather Forecasts | AWF |</title>
+        <meta name="author" content="Marco Pagnin">
+        <meta name="description" content="Franklin city weather forecasts">
+        <!-- external style references in the proper cascading order -->
+        <!-- Google API font reference -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:700" rel="stylesheet">
+        <!-- normalize useragent/browser defaults -->
+        <link href="styles/normalize.css" rel="stylesheet">
+        <!-- default styles - small/phone views  -->
+        <link href="styles/small.css" rel="stylesheet">
+        <!-- medium/tablet views -->
+        <link href="styles/medium.css" rel="stylesheet">
+        <!-- large/wide/desktop views -->
+        <link href="styles/large.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <header class="clearfix">
+            <figure class="imglogo">
+                <img src="images/logo-awf.png" alt="The AWF logo"
+                    srcset="images/logo-awf.png 1x,
+                    images/logo-awf.png 2x,
+                    images/logo-awf.png 3x">
+            </figure>
+            <div class="txtlogo">
+                <h1>Accurate Weather Forecasts</h1>
+                <div class="subheading">Timely information about the weather in your city</div>
+            </div>
+        </header>
+
+        <!-- site navigation use placeholder references -->
+        <nav class="clearfix">
+            <button onclick="toggleNavMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="franklin.html">Franklin</a></li>
+                <li><a href="#">Greenville</a></li>
+                <li><a href="#">Springfield</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h2>The City of Franklin</h2>
+            <figure class="medfig">
+                <picture>
+                    <source media="(min-width:64em)" srcset="images/franklin-large.jpg">
+                    <source media="(min-width:37.5em)" srcset="images/franklin-medium.jpg">
+                    <img src="images/franklin-small.jpg" alt="Picture of sunny day in Franklin area">
+                </picture>
+            </figure>
+            <section>
+                <h3>Weather Summary</h3>
+                <div class="summary">
+                    <div class="highlow">
+                        <div class="hlcont">
+                            <p>Current:&nbsp; <span id="cTemp">??</span>&deg;F</p>
+                        </div>
+                    </div>
+                    <div class="highlow">
+                        <div class="hlcont">
+                            <p>High:&nbsp;<span id="cHTemp">??</span>&deg;F</p>
+                        </div>
+                        <div class="hlcont">
+                            <p>Low:&nbsp; <span id="cLTemp">??</span>&deg;F</p>
+                        </div>
+                    </div>
+                    <div class="current">
+                        <h3><span id="cWeat">??</span></h3>
+                        <picture>
+                            <img id="cIcon" src="" alt="Current Weather" width="100">
+                        </picture>
+                    </div>
+                    <div class="conditions">
+                        <div class="hlcont">
+                            <p>Chance of Precipitation:&nbsp; <span id="valPrec">0</span>&#37;</p>
+                        </div>
+                        <div class="hlcont">
+                            <p>Wind Speed:&nbsp; <span id="cSWind"></span>mpg SW</p>
+                        </div>
+                        <div class="hlcont">
+                            <p>Wind Chill:&nbsp; <span id="cWChill"></span>&deg;F</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="shortForecast">
+                <div class="hlcont">
+                    <h3>Today Forecast</h3>
+                    <p><span id="cFcText">??</span></p>
+                </div>
+            </section>
+
+            <section class="forecast">
+                <table>
+                    <caption>
+                        <h3>10 Day Forecast</h3>
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th>Day 1</th>
+                            <th>Day 2</th>
+                            <th>Day 3</th>
+                            <th>Day 4</th>
+                            <th>Day 5</th>
+                            <th>Day 6</th>
+                            <th>Day 7</th>
+                            <th>Day 8</th>
+                            <th>Day 9</th>
+                            <th>Day 10</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="hTemp">89&deg;F</td>
+                            <td>87&deg;F</td>
+                            <td>78&deg;F</td>
+                            <td>75&deg;F</td>
+                            <td>72&deg;F</td>
+                            <td>72&deg;F</td>
+                            <td>79&deg;F</td>
+                            <td>83&deg;F</td>
+                            <td>85&deg;F</td>
+                            <td>89&deg;F</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <article class="clearfix">
+                <h3>Franklin Breaks Record</h3>
+                <p class="town-article">
+                    <picture>
+                        <source media="(min-width:64em)" srcset="images/pexels-photo-280221-b.jpg">
+                        <source media="(min-width:37.5em)" srcset="images/pexels-photo-280221-m.jpg">
+                        <img src="images/pexels-photo-280221-s.jpg" alt="Picture of view from Franklin city">
+                    </picture>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget sapien ultricies, auctor leo nec, consequat est. Duis at semper tellus. Sed id scelerisque eros. Nulla consectetur facilisis enim eu volutpat. In nec nisi lobortis, iaculis ligula non, fermentum dolor. Phasellus quis mi quis velit volutpat fermentum. Maecenas pretium libero arcu, in imperdiet eros egestas a.
+
+                </p>
+            </article>
+            <article class="clearfix">
+                <h3>Franklin Data</h3>
+                <section class="town-article">
+                    <picture>
+                        <source media="(min-width:64em)" srcset="images/pexels-photo-836941-large.jpg">
+                        <source media="(min-width:37.5em)" srcset="images/pexels-photo-836941-medium.jpg">
+                        <img src="images/pexels-photo-836941-small.jpg" alt="Picture of view from Franklin city">
+                    </picture>
+                    <section class="town-data">
+
+                    </section>
+                </section>
+            </article>
+
+        </main>
+
+        <footer>
+            <aside>
+                <h5>AWF Accurate Weather Forecasts</h5>
+                <h6>132 Main St. - Franklin, MU 83454</h6>
+                <h6>(999).999.999&nbsp;
+                    <a href="mailto:pag17002@byui.edu">contact@theurl.com</a>
+                </h6>
+
+            </aside>
+
+
+            <p class="footer-bar">&copy;2018 All Rights Reserved&nbsp;&nbsp;|&nbsp;&nbsp;Accurate Weather Forecasts&nbsp;&nbsp;|&nbsp;&nbsp;<span id="currdate"></span></p>
+        </footer>
+
+<script src="scripts/currentdate.js"></script>
+<script src="scripts/hamburger.js"></script>
+<!-- <script src="scripts/windchill.js"></script> -->
+<script src="scripts/wu-weather.js"></script>
+<script src="scripts/townsdata-franklin.js"></script>
+
+
+    </body>
+</html>
