@@ -3,9 +3,10 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <title>Accurate Weather Forecasts | AWF |</title>
+        <link rel="icon" href="images/ico-awf-black.png">
+        <title>Thanks for the info | AWF |</title>
         <meta name="author" content="Marco Pagnin">
-        <meta name="description" content="Franklin city weather forecasts">
+        <meta name="description" content="Thank you page for users who provide information through the Stormcenter form">
         <!-- external style references in the proper cascading order -->
         <!-- Google API font reference -->
         <link href="https://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
@@ -33,11 +34,10 @@
                 <div class="subheading">Timely information about the weather in your city</div>
             </div>
         </header>
-
         <!-- site navigation use placeholder references -->
         <nav class="clearfix">
             <button onclick="toggleNavMenu()">&#9776;</button>
-            <ul id="primaryNav" class="hide">
+            <ul id="mainmenu" class="hide">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="franklin.html">Franklin</a></li>
                 <li><a href="greenville.html">Greenville</a></li>
@@ -46,14 +46,13 @@
                 <li><a href="gallery.html">Gallery</a></li>
             </ul>
         </nav>
-
         <main>
-
-            <h2 class="thanks">THANKS</h2>
-            <h3 class="thanks">The information you have provided<br>will be immediately taken into consideration.</h3>
-
+            <div class="myForm">
+                <h2 class="thanks">THANKS</h2>
+                <h3 class="thanks">The information you have provided<br>will be immediately taken into consideration.</h3>
+                <a href="index.html" class="goHomeBtn">Go to Home</a>
+            </div>
         </main>
-
         <footer>
             <aside>
                 <h5>AWF Accurate Weather Forecasts</h5>
@@ -61,17 +60,12 @@
                 <h6>(999).999.999&nbsp;
                     <a href="mailto:pag17002@byui.edu">contact@theurl.com</a>
                 </h6>
-
             </aside>
-
-
             <p class="footer-bar">&copy;2018 All Rights Reserved&nbsp;&nbsp;|&nbsp;&nbsp;Accurate Weather Forecasts&nbsp;&nbsp;|&nbsp;&nbsp;<span id="currdate"></span></p>
         </footer>
 
-        <script src="scripts/currentdate.js"></script>
-        <script src="scripts/hamburger.js"></script>
-        <script src="scripts/windchill.js"></script>
-
-
+        <script src="scripts/mixGallery.js"></script>
+        <!--<script src="scripts/currentdate.js"></script>
+        <script src="scripts/hamburger.js"></script>-->
     </body>
 </html>

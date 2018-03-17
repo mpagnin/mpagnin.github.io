@@ -1,4 +1,4 @@
-// JavaScript - Take Franklin town data JSON
+// JavaScript - Take Springfield town data JSON
 
 var townData = document.querySelector('.town-data');
 

@@ -3,9 +3,10 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <title>Accurate Weather Forecasts | AWF |</title>
+        <link rel="icon" href="images/ico-awf-black.png">
+        <title>Springfield City Accurate Weather Forecasts | AWF |</title>
         <meta name="author" content="Marco Pagnin">
-        <meta name="description" content="Springfield city weather forecasts">
+        <meta name="description" content="Springfield city weather forecasts and info">
         <!-- external style references in the proper cascading order -->
         <!-- Google API font reference -->
         <link href="https://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
@@ -37,7 +38,7 @@
         <!-- site navigation use placeholder references -->
         <nav class="clearfix">
             <button onclick="toggleNavMenu()">&#9776;</button>
-            <ul id="primaryNav" class="hide">
+            <ul id="mainmenu" class="hide">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="franklin.html">Franklin</a></li>
                 <li><a href="greenville.html">Greenville</a></li>
@@ -51,9 +52,9 @@
             <h2>The City of Springfield</h2>
             <figure class="medfig">
                 <picture>
-                    <source media="(min-width:64em)" srcset="images/franklin-large.jpg">
-                    <source media="(min-width:37.5em)" srcset="images/franklin-medium.jpg">
-                    <img src="images/franklin-small.jpg" alt="Picture of sunny day in Springfield area">
+                    <source media="(min-width:64em)" srcset="images/pexels-photo-325944-large.jpg">
+                    <source media="(min-width:37.5em)" srcset="images/pexels-photo-325944-medium.jpg">
+                    <img src="images/pexels-photo-325944-small.jpg" alt="Picture of Springfield area">
                 </picture>
             </figure>
             <section>
@@ -139,9 +140,9 @@
                 <h3>Springfield Breaks Record</h3>
                 <p class="town-article">
                     <picture>
-                        <source media="(min-width:64em)" srcset="images/pexels-photo-280221-b.jpg">
-                        <source media="(min-width:37.5em)" srcset="images/pexels-photo-280221-m.jpg">
-                        <img src="images/pexels-photo-280221-s.jpg" alt="Picture of view from Springfield city">
+                        <source media="(min-width:64em)" srcset="images/pexels-photo-262405-large.jpg">
+                        <source media="(min-width:37.5em)" srcset="images/pexels-photo-262405-medium.jpg">
+                        <img src="images/pexels-photo-262405-small.jpg" alt="View of a house in Springfield">
                     </picture>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget sapien ultricies, auctor leo nec, consequat est. Duis at semper tellus. Sed id scelerisque eros. Nulla consectetur facilisis enim eu volutpat. In nec nisi lobortis, iaculis ligula non, fermentum dolor. Phasellus quis mi quis velit volutpat fermentum. Maecenas pretium libero arcu, in imperdiet eros egestas a.
 
@@ -177,11 +178,12 @@
             <p class="footer-bar">&copy;2018 All Rights Reserved&nbsp;&nbsp;|&nbsp;&nbsp;Accurate Weather Forecasts&nbsp;&nbsp;|&nbsp;&nbsp;<span id="currdate"></span></p>
         </footer>
 
-<script src="scripts/currentdate.js"></script>
-<script src="scripts/hamburger.js"></script>
-<script src="scripts/wu-weather-springfield.js"></script>
-<script src="scripts/townsdata-springfield.js"></script>
-
+        <script src="scripts/mixSpringfield.js"></script>
+        <!--<script src="scripts/currentdate.js"></script>
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/wu-weather-springfield.js"></script>
+        <script src="scripts/townsdata-springfield.js"></script>-->
+        <!--<script src="scripts/activemenu.js"></script>-->
 
     </body>
 </html>

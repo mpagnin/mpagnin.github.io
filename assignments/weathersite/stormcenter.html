@@ -3,9 +3,10 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <title>Accurate Weather Forecasts | AWF |</title>
+        <link rel="icon" href="images/ico-awf-black.png">
+        <title>Storm Center Form | AWF |</title>
         <meta name="author" content="Marco Pagnin">
-        <meta name="description" content="Stormcenter">
+        <meta name="description" content="Form to provide information on storms">
         <!-- external style references in the proper cascading order -->
         <!-- Google API font reference -->
         <link href="https://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
@@ -37,7 +38,7 @@
         <!-- site navigation use placeholder references -->
         <nav class="clearfix">
             <button onclick="toggleNavMenu()">&#9776;</button>
-            <ul id="primaryNav" class="hide">
+            <ul id="mainmenu" class="hide">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="franklin.html">Franklin</a></li>
                 <li><a href="greenville.html">Greenville</a></li>
@@ -49,62 +50,58 @@
 
         <main id="content" class="clearfix">
             <h2>Storm Center</h2>
+            <form action="thanks.html" method="get" enctype="multipart/form-data" name="inform" class="myForm">
+                <fieldset>
+                    <legend><span>Personal Information</span></legend>
+                    <label><span>Full Name:</span><input name="fullname" type="text" value="" placeholder="Full Name" pattern="[a-zA-Z '-._]{5,40}" required autofocus title="Provide your full name"></label>
+                    <label><span>Email:</span><input name="email" type="email" value="" placeholder="email@email.com"></label>
+                    <label><span>Phone:</span><input name="phone" type="tel" value="" placeholder="12345554321" pattern="[0-9]{10,20}" required title="Provide your complete phone number"></label>
+                    <label><span>ZIP Code:</span><input name="zip" type="number" value="" placeholder="12345" pattern="[0-9]{5}" required title="Provide your ZIP code"></label>
+                </fieldset>
+                <fieldset>
+                    <legend><span>Information about the Storm</span></legend>
+                    <label><span>Storm Date:</span><input name="date" type="date"></label>
+                    <label>
+                        <span>Storm Type:</span>
+                        <input type="text" name="stormType" list="stormType">
+                        <datalist id="stormType">
+                            <option value="Flash Flood"></option>
+                            <option value="Hail"></option>
+                            <option value="Hurricane"></option>
+                            <option value="Thunderstorm"></option>
+                            <option value="Tornado"></option>
+                        </datalist>
+                    </label>
+                    <label>
+                        <span>Storm Severity:</span>
+                        <input type="range" id="rating" value="1" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                        <span id="ratingvalue">1</span>
+                    </label>
+                    <label><span>Storm Region:</span>
+                        <select>
+                            <option selected value="selectregion" disabled>Select Region ...</option>
+                            <option value="franklin">Franklin</option>
+                            <option value="greenville">Greenville</option>
+                            <option value="springfield">Springfield</option>
+                        </select>
+                    </label>
+                    <label id="userInDanger"><span>User in-danger:</span></label>
+                        <div id="usInDan">
+                        <input name="userInDanger" type="radio" value="yes"> Yes<br>
+                        <input name="userInDanger" type="radio" value="maybe"> Maybe<br>
+                        <input name="userInDanger" type="radio" value="no"> No<br>
+                        </div>
+                </fieldset>
+                <fieldset>
+                    <legend><span>Other</span></legend>
+                    <label><span>Additional information or Comments</span><textarea name="textInfo" rows="5" maxlength="600"></textarea></label>
+                </fieldset>
 
-            <div class="myForm">
-                <form action="thanks.html" method="get" enctype="multipart/form-data" name="inform" id="stormForm">
-                    <fieldset>
-                        <legend><span>Personal Information</span></legend>
-                        <label><span>Full Name:</span><input name="fullname" type="text" value="" placeholder="Full Name" pattern="[a-zA-Z '-._]{5,40}" required autofocus title="Provide your full name"></label>
-                        <label><span>Email:</span><input name="email" type="email" value="" placeholder="email@email.com"></label>
-                        <label><span>Phone:</span><input name="phone" type="tel" value="" placeholder="12345554321" pattern="[0-9]{10,20}" required title="Provide your complete phone number"></label>
-                        <label><span>ZIP Code:</span><input name="zip" type="number" value="" placeholder="12345" pattern="[0-9]{5}" required title="Provide your ZIP code"></label>
-                    </fieldset>
-                    <fieldset>
-                        <legend><span>Information about the Storm</span></legend>
-                        <label><span>Storm Date:</span><input name="date" type="date"></label>
-                        <label>
-                            <span>Storm Type:</span>
-                            <input type="text" name="stormType" list="stormType">
-                            <datalist id="stormType">
-                                <option value="Flash Flood"></option>
-                                <option value="Hail"></option>
-                                <option value="Hurricane"></option>
-                                <option value="Thunderstorm"></option>
-                                <option value="Tornado"></option>
-                            </datalist>
-                        </label>
-                        <label>
-                            <span>Storm Severity:</span>
-                            <input type="range" id="rating" value="1" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-                            <span id="ratingvalue">1</span>
-                        </label>
-                        <label><span>Storm Region:</span>
-                            <select>
-                                <option selected value="selectregion" disabled>Select Region ...</option>
-                                <option value="franklin">Franklin</option>
-                                <option value="greenville">Greenville</option>
-                                <option value="springfield">Springfield</option>
-                            </select>
-                        </label>
-                        <label id="userInDanger"><span>User in-danger:</span></label>
-                            <div id="usInDan">
-                            <input name="userInDanger" type="radio" value="yes"> Yes<br>
-                            <input name="userInDanger" type="radio" value="maybe"> Maybe<br>
-                            <input name="userInDanger" type="radio" value="no"> No<br>
-                            </div>
+                <input name="submitBut" type="submit" value="Submit" class="submitBtn" onclick="thanks.html">
 
-                    </fieldset>
-                    <fieldset>
-                        <legend><span>Other</span></legend>
-                        <label><span>Additional information or Comments</span><textarea name="textInfo" rows="5" maxlength="600"></textarea></label>
-                    </fieldset>
-
-                    <input name="submitBut" type="submit" value="Submit" class="submitBtn" onclick="thanks.html">
-
-                   <!-- <input type="hidden" value="Storm Report" name="subject">-->
-                    <input type="hidden" name="redirect" value="thanks.html">
-                </form>
-            </div>
+                <!-- <input type="hidden" value="Storm Report" name="subject">-->
+                <!-- <input type="hidden" name="redirect" value="thanks.html">-->
+            </form>
         </main>
 
         <footer>
@@ -121,11 +118,11 @@
             <p class="footer-bar">&copy;2018 All Rights Reserved&nbsp;&nbsp;|&nbsp;&nbsp;Accurate Weather Forecasts&nbsp;&nbsp;|&nbsp;&nbsp;<span id="currdate"></span></p>
         </footer>
 
-        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/mixStormcenter.js"></script>
+        <!--<script src="scripts/currentdate.js"></script>
         <script src="scripts/hamburger.js"></script>
-        <script src="scripts/windchill.js"></script>
-        <script src="scripts/stormseverity.js"></script>
-
+        <script src="scripts/stormseverity.js"></script>-->
+        <!--<script src="scripts/activemenu.js"></script>-->
 
     </body>
 </html>

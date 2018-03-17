@@ -83,7 +83,6 @@ nav ul li a {
     color: #FFF;
     border-top: 1px solid rgba(0,0,0,0.3);
 }
-
 nav ul li a:hover {
     background-color: #BED1F5;
     color: #0D5EF3;
@@ -101,7 +100,7 @@ nav ul.hide {
 }
 
 main {
-    padding: 2%;
+    padding: 2% 2% 4% 2%;
 }
 main h2 {
     font-family: "Raleway", sans-serif;
@@ -118,11 +117,11 @@ main figure img {
     max-width: 100%;
 }
 main h2.thanks {
-    padding: 5% 0 1% 0;
+    padding: 4% 0 1% 0;
 }
 main h3.thanks {
     text-align: center;
-    padding: 1% 0 5% 0;
+    padding: 1% 0 3% 0;
 }
 
 section {
@@ -131,9 +130,6 @@ section {
 }
 section h3 {
     text-align: center;
-}
-section.sgrid {
-    margin: 2%;
 }
 section.sgrid h3 {
     text-align: center;
@@ -153,6 +149,9 @@ section.sgrid img {
 }
 section.sgrid article {
     box-shadow: 3px 3px 8px 3px #a9a9a9;
+}
+figcaption {
+    padding: 2%;
 }
 /* article.clearfix {
     margin: 2%;
@@ -236,7 +235,7 @@ article .town-article img {  /* This structure refers to img elrements that are 
     grid-row-gap: 2rem;
 }
 .myForm {
-    margin: 1em 2%;
+    margin: 1% 2% 4% 2%;
     text-align: center;
 }
 fieldset {
@@ -282,6 +281,21 @@ input.submitBtn {
     padding: .3em;
     background: #FFA200; /* Old browsers */
     box-shadow: 4px 4px 10px #666;
+}
+.goHomeBtn {
+    -webkit-appearance: none; /* remove the apple mobile default styling */
+    text-decoration: none;
+    color: #fff;
+    border: solid 1px #111;
+    border-radius: 7px;
+    width: 100%;
+    max-width: 550px;
+    margin: 1% 0 4% 0;
+    font-size: 1.2em;
+    padding: .3em;
+    background: #0D5EF3; /* Old browsers */
+    box-shadow: 4px 4px 10px #666;
+    text-align: center;
 }
 /*NEW HTML5 validation*/
 label input, span#ratingvalue {
