@@ -218,6 +218,9 @@ section.town-data ul{
 article h3 {
     text-align: center;
 }
+.artBord {
+    box-shadow: 3px 3px 8px 3px #a9a9a9;
+}
  .town-article {
     margin: 1rem 0 2% 0;
     max-width: 100%;
