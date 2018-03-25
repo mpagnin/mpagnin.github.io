@@ -11,10 +11,10 @@
             })*/
 
     /* applying opacity to the logo - selects one element with the ID provided*/
-    window.onload = function(){
+    /*window.onload = function(){
     var element = document.getElementById('alcoveLogo');
     element.style.opacity = 0.2;
-}
+}*/
 
 /* applying color to the selected elements - selects one or more elements with the class provided and returns a nodelist*/
 /*window.onload = function(){
@@ -104,5 +104,8 @@
             }
             $('#ReqAQuoteBtn').click( toggleStyle );*/
 
-/* insert content in the DOM
-                $('.coreValues').append("<li><strong>This is brand new !!</strong></li>");*/
+/* insert content in the DOM */
+$function({
+    $('.coreValues').append("<li><strong>This is brand new !!</strong></li>");
+})
+
