@@ -104,8 +104,27 @@
             }
             $('#ReqAQuoteBtn').click( toggleStyle );*/
 
-/* insert content in the DOM */
-$function({
+/* insert content in the DOM - insert in the end of the list - append */
+/* $function({
     $('.coreValues').append("<li><strong>This is brand new !!</strong></li>");
-})
 
+    $("<li><strong>This is also great !!</strong></li>").appendTo(".coreValues");
+})*/
+
+/* insert content in the DOM - insert at the beginning of the list - prepend */
+
+/*$function({
+    $('.coreValues').prepend("<li><strong>This is brand new !!</strong></li>");
+
+    $("<li><strong>This is also great !!</strong></li>").prependTo(".coreValues");
+})*/
+
+/*$function({
+    var nameVal = $('input[name="nameVal"]');
+    function FillEmpty(){
+    if( nameVal.val() == ''){
+    nameVal.val( 'John Doe' );
+        }
+    }
+    $('#ReqAQuoteBtn').click( FillEmpty );
+})*/
