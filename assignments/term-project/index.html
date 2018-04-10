@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="icon" href="images/logo-tms-ico.jpg">
+        <title>Passion for Cycling Love for Nature | The Mountain Spoke Home Page |</title>
+        <meta name="author" content="Marco Pagnin">
+        <meta name="description" content="Home page of The Mountain Spoke">
+        <!-- external style references in the proper cascading order -->
+        <!-- Google API font reference -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
+        <!-- normalize useragent/browser defaults -->
+        <link href="styles/normalize.css" rel="stylesheet">
+        <!-- default styles - small/phone views  -->
+        <link href="styles/small.css" rel="stylesheet">
+        <!-- medium/tablet views -->
+        <link href="styles/medium.css" rel="stylesheet">
+        <!-- large/wide/desktop views -->
+        <link href="styles/large.css" rel="stylesheet">
+    </head>
+    <body>
+        <header class="clearfix">
+            <div class="header-small">
+            <figure class="imglogo">
+                <img src="images/logo-tms.png" alt="The Mountain Spoke Logo"
+                    srcset="images/logotms.png 1x,
+                    images/logotms.png 2x,
+                    images/logotms.png 3x">
+            </figure>
+            <div class="subheading">Passion for Cycling<br>Love for Nature</div>
+            <div class="buttmenu">
+                <button onclick="toggleNavMenu()">&#9776;</button>
+            </div>
+            </div>
+        </header>
+        <!-- site navigation use placeholder references -->
+        <nav class="clearfix">
+            <ul id="mainmenu" class="hide">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="adventure-tours.html">Adventure Tours</a></li>
+                <li><a href="event.html">Event</a></li>
+                <li><a href="sales.html">Sales</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <main id="content" class="clearfix">
+            <figure class="medfig">
+                <picture>
+                    <source media="(min-width:64em)" srcset="images/bicycle-cloud-clouds-258045-1920.jpg">
+                    <source media="(min-width:37.5em)" srcset="images/bicycle-cloud-clouds-258045-1024.jpg">
+                    <img src="images/bicycle-cloud-clouds-258045-0600.jpg" alt="a man cycling in the mountains">
+                </picture>
+            </figure>
+
+            <div class="container">
+                <div class="home">
+                    <h1>The Mountain Spoke<br>Home Page</h1>
+                </div>
+                <section class="about">
+                    <figure>
+                        <picture class="imgmain">
+                            <source media="(min-width:64em)" srcset="images/pexels-photo-90454-620.jpg">
+                            <source media="(min-width:37.5em)" srcset="images/pexels-photo-90454-500.jpg">
+                            <img src="images/pexels-photo-90454-600mob.jpg" alt="Downhill in a wood">
+                        </picture>
+                    </figure>
+                    <h2>Live your passion with us</h2>
+                    <p>Montana offers thrills for cyclists of all ages, both experts and simple enthusiasts. Sports clubs all over the world organize tours in our area and rely on our services with confidence.</p>
+                    <h3>About us</h3>
+                    <p>The love of nature and the passion for cycling that have been guiding us for over 75 years make us a true point of reference for all enthusiasts.</p>
+                </section>
+                <aside class="event">
+                    <h2>Register for the annual<br>"Cycle the Continental Divide"</h2>
+                    <p>You must be registered to partecipate in the event. Register on the Event page now!</p>
+                    <button class="submitBtn">Register Now!</button>
+                </aside>
+                <article class="news">
+                    <figure>
+                        <picture class="imgmain">
+                            <source media="(min-width:64em)" srcset="images/pexels-photo-241831-620.jpg">
+                            <source media="(min-width:37.5em)" srcset="images/pexels-photo-241831-500.jpg">
+                            <img src="images/pexels-photo-241831-600mob.jpg" alt="free style exhibition">
+                        </picture>
+                    </figure>
+                    <h2>News</h2>
+                    <p>Saturday, May 12 from 4 pm to 6 pm in the test yard of our store, a <a class="linkEvent" href="event.html">free style exhibition</a> with the greatest US specialists. Between banks, walls, rails, fullpipe, bowl, mini half-pipe, the athletes will delight us with their tricks. At the end the athletes will be available to answer questions, sign autographs and share some of their most beautiful adventures. Come and have fun with us!</p>
+                </article>
+            </div>
+        </main>
+
+        <footer class="clearfix">
+            <aside class="first">
+                <div class="newsletter">
+                    <form action="thanksnews.html" method="get" enctype="multipart/form-data" name="inform" class="myForm">
+                        <fieldset>
+                            <legend><span>Receive news every week</span></legend>
+                            <label><span>Full Name:</span><input name="fullname" type="text" value="" placeholder="Full Name" pattern="[a-zA-Z '-._]{5,40}" required title="Provide your full name - min 5 crt"></label>
+                            <label><span>Email:</span><input name="email" type="email" value="" placeholder="email@email.com" required title="Provide your email"></label>
+                        </fieldset>
+                        <input name="submitBut" type="submit" value="Join our list" class="submitBtn" onclick="thanks.html">
+                    </form>
+                </div>
+                <div class="social">
+                    <h4>Join us on</h4>
+                    <div class="social-link">
+                        <div class="soclink">
+                            <a target="_blank" href="https://www.facebook.com"><img class="socialmedia"  src="images/facebook.png" alt="Link to Facebook"></a></div>
+                        <div class="soclink">
+                            <a target="_blank" href="https://www.twitter.com"><img class="socialmedia" src="images/twitter.png" alt="Link to Twitter"></a></div>
+                        <div class="soclink">
+                            <a target="_blank" href="https://plus.google.com"><img class="socialmedia" src="images/googleplus.png" alt="Link to GooglePlus"></a></div>
+                    </div>
+                </div>
+            </aside>
+            <hr>
+            <aside class="middle">
+                <div class="box1">
+                    <h5>The Mountain Spoke</h5>
+                    <h6>3950 Valley Common Drive</h6>
+                    <h6>Bozeman, MT 59715 U.S.A.</h6>
+                </div>
+                <div class="box2">
+                    <h6>Mon - Sat:&nbsp;&nbsp; 8:00 - 8:00</h6>
+                    <h6>(999).999.9999</h6>
+                    <h6><a href="mailto:pag17002@byui.edu">contact@theurl.com</a></h6>
+                </div>
+            </aside>
+            <hr>
+            <aside class="last">
+                <p class="footer-bar">&copy;2018 The Mountain Spoke - All Rights Reserved</p>
+                <a class="footer-bar" href="resource-reference.html">Resource Reference Page</a>
+            </aside>
+        </footer>
+        <script src="scripts/activemenu.js"></script>
+        <script src="scripts/hamburger.js"></script>
+        <!--<script src="scripts/townsdata.js"></script>-->
+        <!--<script src="scripts/currentdate.js"></script>-->
+    </body>
+</html>

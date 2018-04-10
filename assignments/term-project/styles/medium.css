@@ -1,0 +1,71 @@
+@media only screen and (min-width: 37.5rem) {
+    /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+
+    header figure.imglogo {
+        width: 25%;
+    }
+    header h1 {
+        font-size: 1.8rem;
+    }
+    header .subheading {
+        padding: .7rem 0 .6rem 0;
+        font-size: 1.1rem;
+    }
+    .headcont {
+        max-width: 100%;
+        display: flex;
+    }
+	.header-small button {
+		display: none;
+	}
+    nav button {
+        display:none;
+    }  /* hamburger button does not need to be shown */
+    nav ul.hide {
+        display: flex;
+    }
+    nav ul {
+        padding: 1% 2% 0 2%;
+    }
+    nav ul li {
+        flex-direction: row;
+        flex-wrap: nowrap;
+     }
+    nav ul li a {
+        border: none;
+        padding: .6rem 0.7rem;
+    }
+	footer aside {
+		display: flex;
+		flex-direction: row;
+	}
+	footer .first {
+		justify-content: space-around;
+		/*justify-content: center;*/
+	}
+	footer .first .newsletter {
+		margin-right: 6%;
+	}
+	footer .first .social {
+		margin-left: 6%;
+	}
+	.social h4 {
+		margin: 0.8em;
+	}
+	.social-link {
+		display: flex;
+		justify-content: space-around;
+	}
+	footer .middle {
+		justify-content: center;
+	}
+	footer .middle .box1 {
+	margin-right: 8%;
+	}
+	footer .middle .box2 {
+	margin-left: 8%;
+	}
+	footer .last {
+		justify-content: space-between;
+	}
+}
