@@ -4,36 +4,11 @@
     nav ul li a {
 		padding: .6rem 1rem;
     }
-    main figure.medfig {
-		max-width: 100%;
-		float: none;
-    }
-    main figure img {
-		max-width: 100%;
-    }
-    section {
-		margin: 2% 0;
-    }
-    section .summary {
-		display: flex;
-		flex-flow: row nowrap;
-		justify-content: space-around;
-		align-items: center;
-    }
-    .highlow {
-		margin: 0;
-    }
-    .highlow .hlcont {
-		margin: 0;
-    }
-    .conditions .hlcont {
-		margin: 0;
-    }
-    article p.home-article img {
-		width: 100%;
-    }
     .container {
+		display: grid;
 		grid-template-columns: repeat(3, 1fr);
+		grid-column-gap: 1rem;
+		grid-row-gap: 2rem;
     }
 	.home {
 		grid-column-start: 1;
@@ -46,6 +21,10 @@
 		grid-column-end: 3;
 		grid-row-start: 2;
 		grid-row-end: 3;
+	}
+	.about picture {
+		grid-column-start: 1;
+		grid-column-end: 2;
 	}
 	.event {
 		grid-column-start: 3;
