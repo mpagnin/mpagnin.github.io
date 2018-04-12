@@ -122,14 +122,21 @@ figure.contfig img{
 }
 .about, .event, .news {
 	margin-bottom: 2em;
+	padding: 2%;
     box-shadow: 3px 3px 8px 3px #344141;
 }
 .event {
     text-align: center;
+	padding-bottom: 5%;
 }
 .event h2 {
-    color: #FFFFFF;
-    background-color: #5C7172;
+    color: #FF9A00;
+    background-color: #344141;
+	margin-top: 0;
+	padding: 0.2em 0;
+}
+.event p {
+	text-align: left;
 }
 .linkEvent {
     color: #017277;

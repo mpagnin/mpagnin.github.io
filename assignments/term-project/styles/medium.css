@@ -6,7 +6,7 @@
     }
     header .subheading {
         padding: .7rem 0 .6rem 0;
-        font-size: 1.1rem;
+        font-size: 1.3rem;
     }
     .headcont {
         max-width: 100%;
@@ -34,14 +34,16 @@
     }
 	.contfig {
 		width: 50%;
-		margin: 3% 1% 3% 3%;
 	}
 	img{
 		max-width: 100%;
 	}
 	.text, .fullriga {
 		width: 50%;
-		margin: 0 3% 1% 1%;
+		margin: 0 1% 0 2%;
+	}
+	.text h2 {
+		margin-top: 0;
 	}
 	.about, .event, .news {
 		display: flex;
