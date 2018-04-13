@@ -122,10 +122,23 @@ main .medfig img {
     max-width: 96%;
     margin: auto;
 }
+.thanksCont {
+	margin: 2% auto 4% auto;
+	max-width: 500px;
+    text-align: left;
+	padding: 0.5em 1em;
+	background-color: #FFC263;
+    color: #344141;
+	border: 2px solid #FF3D00;
+	border-radius: 3px;
+}
+.thanksBtn {
+	margin: 2% auto 4% auto;
+}
 figure.contfig img{
     max-width: 100%;
 }
-.home {
+.h1text {
     text-align: center;
 }
 .about, .event, .news {
@@ -172,7 +185,7 @@ footer aside {
 footer form {
     padding: 0.5em 0;
 }
-.myForm {
+.myForm, .eventForm {
     text-align: center;
 }
 fieldset {
@@ -184,6 +197,10 @@ fieldset {
     margin: 0.5em auto;
     padding: 0.3em;
 }
+.eventForm fieldset {
+	max-width: 520px;
+	padding: 0.5em;
+}
 legend {
     display: block;
     text-align: left;
@@ -191,9 +208,21 @@ legend {
     font-size: 1.1em;
     color: #FF9A00;
 }
+.eventForm legend {
+	margin: 1em 0;
+	text-align: center;
+	padding: .5em;
+    border: #FF3D00 solid 2px;
+	color: #FF3D00;
+    background-color: #FFFFFF;
+    border-radius: .3em;
+}
 label {
     display: block;
     text-align: left;
+}
+.eventForm label {
+	margin-bottom: 1em;
 }
 label span {
     display: block;
@@ -201,6 +230,14 @@ label span {
     font-size: .9em;
     color: #FFFFFF;
     margin: 0.3em 0 0 0;
+}
+textarea {
+    width: 100%;
+    max-width: 500px;
+}
+.thbtn {
+	text-align: center;
+	margin: 2em 0 1em 0;
 }
 .submitBtn {
     -webkit-appearance: none; /* remove the apple mobile default styling */
@@ -245,13 +282,15 @@ label span {
     border: solid 1px #111;
     border-radius: 7px;
     width: 100%;
-    max-width: 550px;
-    margin: 1% 0 4% 0;
+    max-width: 290px;
     font-size: 1.2em;
     padding: .3em;
-    background: #0D5EF3; /* Old browsers */
+    background: #FF9A00;
     box-shadow: 4px 4px 10px #666;
-    text-align: center;
+	text-align: center;
+}
+.goHomeBtn:hover {
+    background: #FF3D00;
 }
 /*NEW HTML5 validation*/
 label input {
@@ -266,7 +305,12 @@ label input {
     max-width: 300px;
     outline: none;
 }
-
+.eventForm label input {
+	max-width: 500px;
+}
+.eventForm label textarea {
+	margin: 0.3em 0;
+}
 /* The input that currently has the focus */
 input:focus {
     box-shadow: 0px 0px 1px 2px rgba(255,61,0,1) inset;

@@ -45,7 +45,14 @@
 		width: 50%;
 		margin: 0 1% 0 2%;
 	}
-	.text h2 {
+	.event #eventPg {
+		display: flex;
+	}
+	#kuki {
+		width: 100%;
+		margin: 0;
+	}
+	.text h2, .fullriga h2 {
 		margin-top: 0;
 	}
 	.about, .event, .news {
