@@ -61,30 +61,20 @@
             </div>
 
             <div class="container">
-                <section class="about">
+                <section class="about" id="eventA">
                     <figure class="contfig">
                         <picture class="imgmain">
-                            <source media="(min-width:64em)" srcset="images/cyclists-trail-bike-clouds-163407-620.jpg">
-                            <source media="(min-width:37.5em)" srcset="images/cyclists-trail-bike-clouds-163407-500.jpg">
-                            <img src="images/cyclists-trail-bike-clouds-163407-600mob.jpg" alt="Two cyclists on a dirt road">
+                            <source media="(min-width:64em)" srcset="images/bicycles-1541075-620.jpg">
+                            <source media="(min-width:37.5em)" srcset="images/bicycles-1541075-500.jpg">
+                            <img src="images/bicycles-1541075-600.jpg" alt="Many bicycles to sell">
                         </picture>
                     </figure>
                     <div class="text";>
-                    <h2>Hyalite Canyon</h2>
-                        <p>Following our instructors, with the mountain bike you will follow a dirt path along the Hyalite creek.<br>The long but moderately steep climb into the canyon will end at the Hyalite Reservoir. Here you can enjoy beautiful views of the high peaks of the Gallatin Range.<br>After resting and refreshing you will be ready for the fun descent that will take you to the valley.</p>
-                        <h3>Length</h3>
-                        <p>The length of the route is a total of 53.55 miles</p>
-                        <h3>Climb</h3>
-                        <p>2,091 ft.<br>Start elevation: 4,700 ft.<br>Max elevation: 6,791 ft.</p>
-                        <h3>Skill Level</h3>
-                        <p>Easy to moderate. The tour is not particularly difficult, but we recommend it for people trained to take long dirt ascents.</p>
-                        <h3>Cost</h3>
-                        <p>$125.00<br>The price includes a packed lunch with beverage.</p>
-                        <h3>Location</h3>
-                        <p>Located 9 miles south of Bozeman in the foothills of the Gallatin Range.</p>
+                    <h2>The best products for you</h2>
+                        <p>Enter our store and enjoy the wide selection of quality bicycles.<br>Mountain bikes, road bikes, city bikes, kids bikes, here you can find all you need.<br>We sell only quality products, with the best value for money.<br>Here only few examples. Enjoy yourself!</p>
                     </div>
                 </section>
-                <aside class="event">
+                <aside class="event" id="eventC">
                     <figure class="contfig">
                         <picture class="imgmain">
                             <source media="(min-width:64em)" srcset="images/bike-cycling-trail-cyclist-160949-450.jpg">
@@ -99,27 +89,25 @@
                     </div>
 
                 </aside>
-                <article class="news">
-                    <figure class="contfig">
-                        <picture class="imgmain">
-                            <source media="(min-width:64em)" srcset="images/agriculture-bicycle-bicycling-258036-620.jpg">
-                            <source media="(min-width:37.5em)" srcset="images/agriculture-bicycle-bicycling-258036-500.jpg">
-                            <img src="images/agriculture-bicycle-bicycling-258036-600mob.jpg" alt="A bicyclist along a street">
-                        </picture>
-                    </figure>
-                    <div class="text">
-                        <h2>West Bridger-Foothills Road Loop</h2>
-                        <p>A nice tour on roads with little traffic near the city. Located along the western side of the Bridger Range on the north edge of Bozeman, it offers beautiful views of the Gallatin Valley and the southern end of the Bridgers. After an initial stretch on paved roads, more than half of the route is on a dirt road.</p>
-                        <h3>Length</h3>
-                        <p>The length of the route is a total of 15.9 miles</p>
-                        <h3>Climb</h3>
-                        <p>400 ft.<br>Start elevation: 4,700 ft.<br>Max elevation: 5,100 ft.</p>
-                        <h3>Skill Level</h3>
-                        <p>Easy. The tour is also suitable for families with children over 8 years.</p>
-                        <h3>Cost</h3>
-                        <p>$35.00<br>The price includes beverage.</p>
-                        <h3>Location</h3>
-                        <p>Located on the north edge of Bozeman.</p>
+                <article class="news" id="eventB">
+                    <div class="text" id="accMenu">
+                        <h2>Accordion</h2>
+
+                        <button class="accordion">Section 1</button>
+                        <div class="panel">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+
+                        <button class="accordion">Section 2</button>
+                        <div class="panel">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+
+                        <button class="accordion">Section 3</button>
+                        <div class="panel">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+
                     </div>
                 </article>
             </div>
@@ -128,13 +116,13 @@
         <footer class="clearfix">
             <aside class="first">
                 <div class="newsletter">
-                    <form action="thanksnews.html" method="get" enctype="multipart/form-data" name="inform" class="myForm">
+                    <form action="thanks-newsletter.html" method="get" enctype="multipart/form-data" name="inform" class="myForm">
                         <fieldset>
                             <legend><span>Receive news every week</span></legend>
                             <label><span>Full Name:</span><input name="fullname" type="text" value="" placeholder="Full Name" pattern="[a-zA-Z '-._]{5,40}" required title="Provide your full name - min 5 crt"></label>
                             <label><span>Email:</span><input name="email" type="email" value="" placeholder="email@email.com" required title="Provide your email"></label>
                         </fieldset>
-                        <input name="submitBut" type="submit" value="Join our list" class="submitBtn" onclick="thanks.html">
+                        <input name="submitBut" type="submit" value="Join our list" class="submitBtn" onclick="thanks-newsletter.html">
                     </form>
                 </div>
                 <div class="social">
@@ -172,6 +160,7 @@
         </footer>
         <script src="scripts/activemenu.js"></script>
         <script src="scripts/hamburger.js"></script>
+        <script src="scripts/accordion.js"></script>
         <!--<script src="scripts/townsdata.js"></script>-->
         <!--<script src="scripts/currentdate.js"></script>-->
     </body>

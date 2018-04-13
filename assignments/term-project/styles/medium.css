@@ -45,6 +45,10 @@
 		width: 50%;
 		margin: 0 1% 0 2%;
 	}
+	#accMenu {
+		width: 100%;
+		margin: 0 1%;
+	}
 	.event #eventPg {
 		display: flex;
 	}

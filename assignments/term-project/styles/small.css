@@ -121,6 +121,17 @@ main .medfig img {
 .container {
     max-width: 96%;
     margin: auto;
+	display: flex;
+	flex-flow: column;
+}
+#eventA {
+	order: 0;
+}
+#eventB {
+	order: 1;
+}
+#eventC {
+	order: 2;
 }
 .thanksCont {
 	margin: 2% auto 4% auto;
