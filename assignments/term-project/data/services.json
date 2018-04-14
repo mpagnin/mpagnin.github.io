@@ -1,0 +1,30 @@
+{
+  "services" : [
+  {
+    "name": "Boxing",
+    "description": "We’ll box up your bike up so it’s ready to ship.",
+    "price": "$50",
+    ]
+  },
+  {
+    "name": "Unboxing",
+    "description": "Have you bike shipped to us; we'll unbox and build it for you",
+    "price": "$70",
+    ]
+  },
+
+  {
+    "name": "Safety Check",
+    "description": "Adjust rakes, derailleurs, lube drivetrain, grease seatpost",
+    "price": "$40",
+    ]
+  },
+
+  {
+    "name": "Singlespeed",
+    "description": "Wash bike, true wheels, adjust rakes, derailleurs, lube drivetrain, grease seatpost",
+    "price": "$40",
+    ]
+  }
+ ]
+}
