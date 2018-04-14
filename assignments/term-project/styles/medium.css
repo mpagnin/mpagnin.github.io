@@ -41,6 +41,10 @@
 	.panelN figure {
 		padding-top: 1em;
 	}
+	.finCont {
+	display: flex;
+	justify-content: space-around;
+}
 	.contfig {
 		width: 50%;
 	}

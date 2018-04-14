@@ -156,6 +156,12 @@ main .medfig img {
 #eventC {
 	order: 2;
 }
+#map {
+	text-align: center;
+}
+#map iframe {
+	box-shadow: 4px 4px 10px #666;
+}
 .thanksCont {
 	margin: 2% auto 4% auto;
 	max-width: 500px;
@@ -192,6 +198,16 @@ figure.contfig img{
 }
 .event p {
 	text-align: left;
+}
+h2 {
+	text-align: center;
+}
+
+.contFig {
+	text-align: center;
+}
+.contFig p {
+	margin: 0.5em 0;
 }
 .linkEvent {
     color: #017277;
@@ -273,8 +289,29 @@ textarea {
 	text-align: center;
 	margin: 2em 0 1em 0;
 }
+.fullriga h3 {
+	margin-bottom: 1em;
+}
 .submitBtn {
     -webkit-appearance: none; /* remove the apple mobile default styling */
+    text-decoration: none;
+    color: #fff;
+    border: solid 1px #111;
+    border-radius: 7px;
+    width: 100%;
+    max-width: 290px;
+    font-size: 1.2em;
+    padding: .1em 1.5em;
+    background: #FF9A00;
+    box-shadow: 4px 4px 10px #666;
+	text-align: center;
+}
+.submitBtn:hover {
+    background: #FF3D00;
+}
+.goHomeBtn {
+    -webkit-appearance: none; /* remove the apple mobile default styling */
+    text-decoration: none;
     color: #fff;
     border: solid 1px #111;
     border-radius: 7px;
@@ -284,8 +321,9 @@ textarea {
     padding: .3em;
     background: #FF9A00;
     box-shadow: 4px 4px 10px #666;
+	text-align: center;
 }
-.submitBtn:hover {
+.goHomeBtn:hover {
     background: #FF3D00;
 }
 .social {
@@ -308,23 +346,6 @@ textarea {
 }
 .soclink a img:hover {
     box-shadow: 4px 4px 10px #FF9A00;
-}
-.goHomeBtn {
-    -webkit-appearance: none; /* remove the apple mobile default styling */
-    text-decoration: none;
-    color: #fff;
-    border: solid 1px #111;
-    border-radius: 7px;
-    width: 100%;
-    max-width: 290px;
-    font-size: 1.2em;
-    padding: .3em;
-    background: #FF9A00;
-    box-shadow: 4px 4px 10px #666;
-	text-align: center;
-}
-.goHomeBtn:hover {
-    background: #FF3D00;
 }
 /*NEW HTML5 validation*/
 label input {

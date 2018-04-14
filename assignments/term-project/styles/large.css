@@ -22,10 +22,6 @@
 		grid-row-start: 2;
 		grid-row-end: 3;
 	}
-	/*.about picture {
-		grid-column-start: 1;
-		grid-column-end: 3;
-	}*/
 	.event {
 		grid-column-start: 6;
 		grid-column-end: 8;
@@ -49,9 +45,6 @@
 	}
 	#kuki {
 		order: 0;
-	}
-	.fullriga h3 {
-		margin-bottom: 1em;
 	}
 	.news {
 		grid-column-start: 1;
