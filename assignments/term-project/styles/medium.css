@@ -66,6 +66,9 @@
 	article #accMenus h2{
 		margin-top: 0;
 	}
+	article #accMenu h2{
+		margin-top: 0;
+	}
 	.event #eventPg {
 		display: flex;
 	}
