@@ -163,6 +163,31 @@ main .medfig img {
 	max-width: 100%;
 	box-shadow: 4px 4px 10px #666;
 }
+    section.service {
+        padding: 1rem 0;
+        display: block;
+        align-items: center;
+    }
+    table {
+        table-layout: fixed;
+        margin: auto;
+        width: 96%;
+        caption-side: top;
+    }
+    caption {
+        background-color: #FFE8C0;
+    }
+    caption h3 {
+        margin: .5rem;
+    }
+    table, caption, th, td {
+        border: 0.15rem solid #000;
+        border-collapse: collapse;
+    }
+    th, td {
+        text-align: center;
+        padding: 0.3rem 0;
+    }
 .thanksCont {
 	margin: 2% auto 4% auto;
 	max-width: 500px;
@@ -398,6 +423,31 @@ hr {
     margin-left: 2%;
     margin-right: 2%;
 }
+section.forecast {
+        padding: 1rem 0;
+        display: block;
+        align-items: center;
+    }
+    table {
+        table-layout: fixed;
+        margin: auto;
+        width: 96%;
+        caption-side: top;
+    }
+    caption {
+        background-color: #FFE8C0;
+    }
+    caption h3 {
+        margin: .5rem;
+    }
+    table, caption, th, td {
+        border: 0.15rem solid #000;
+        border-collapse: collapse;
+    }
+    th, td {
+        text-align: center;
+        padding: 0.3rem 0;
+    }
 
 /* Other Class Selectors */
 .clearfix:after {
