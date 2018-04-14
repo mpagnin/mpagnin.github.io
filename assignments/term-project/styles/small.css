@@ -131,6 +131,7 @@ main .medfig img {
     padding: 15px;
     width: 100%;
     border: 1px solid #414141;
+	font-size: 1.2em;
     text-align: left;
     outline: none;
     transition: 0.4s;

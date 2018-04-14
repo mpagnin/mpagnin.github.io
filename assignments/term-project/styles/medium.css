@@ -35,6 +35,12 @@
         border: none;
         padding: .6rem 0.7rem;
     }
+	.panelN {
+		display: flex;
+	}
+	.panelN figure {
+		padding-top: 1em;
+	}
 	.contfig {
 		width: 50%;
 	}
@@ -45,9 +51,12 @@
 		width: 50%;
 		margin: 0 1% 0 2%;
 	}
-	.accMenu {
+	#accMenu {
 		width: 100%;
-		margin: 0 1%;
+		margin: 0;
+	}
+	article #accMenu h2{
+		margin-top: 0;
 	}
 	.event #eventPg {
 		display: flex;

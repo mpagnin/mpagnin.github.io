@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="icon" href="images/logo-tms-ico.jpg">
+        <title>Resource reference page | The Mountain Spoke </title>
+        <meta name="author" content="Marco Pagnin">
+        <meta name="description" content="Thanks to all the owners of the website where I found information">
+        <!-- external style references in the proper cascading order -->
+        <!-- Google API font reference -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
+        <!-- normalize useragent/browser defaults -->
+        <link href="styles/normalize.css" rel="stylesheet">
+        <!-- default styles - small/phone views  -->
+        <link href="styles/small.css" rel="stylesheet">
+        <!-- medium/tablet views -->
+        <link href="styles/medium.css" rel="stylesheet">
+        <!-- large/wide/desktop views -->
+        <link href="styles/large.css" rel="stylesheet">
+    </head>
+    <body>
+        <header class="clearfix">
+            <div class="header-small">
+                <div class="intesta">
+                    <figure class="imglogo">
+                        <a href="index.html"><img src="images/logo-tms.png" alt="The Mountain Spoke Logo"
+                        srcset="images/logotms.png 1x,
+                        images/logotms.png 2x,
+                        images/logotms.png 3x"></a>
+                    </figure>
+                    <div class="subheading">Passion for Cycling<br>Love for Nature</div>
+                </div>
+                <div class="buttmenu">
+                    <button onclick="toggleNavMenu()">&#9776;</button>
+                </div>
+            </div>
+        </header>
+        <!-- site navigation use placeholder references -->
+        <nav class="clearfix">
+            <ul id="mainmenu" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tours.html">Adventure Tours</a></li>
+                <li><a href="event.html">Event</a></li>
+                <li><a href="sales.html">Sales</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <main id="content" class="clearfix">
+            <figure class="medfig">
+                <picture>
+                    <source media="(min-width:64em)" srcset="images/bicycle-cloud-clouds-258045-1920.jpg">
+                    <source media="(min-width:37.5em)" srcset="images/bicycle-cloud-clouds-258045-1024.jpg">
+                    <img src="images/bicycle-cloud-clouds-258045-0600.jpg" alt="a man cycling in the mountains">
+                </picture>
+            </figure>
+            <div class="clearfix">
+            <div class="h1text">
+                <h1>Resource Reference Page</h1>
+            </div>
+            <div class="thanksCont">
+                <h2 class="hthanks">Thanks</h2>
+                <p>Thanks to all the owners of the website where I found information.</p>
+                <br>
+                <p>http://www.mapmyride.com/us/bozeman-mt/hyalite-canyon-route-439365</p>
+                <p>https://www.trails.com/tcatalog_trail.aspx?trailid=BGR028-006</p>
+                <p>http://tourdivide.org/about_the_route</p>
+                <p>https://thecyclinghouse.com/trip/cycling-tour-de-montana/</p>
+                <p>https://www.diamondback.com</p>
+                <p class="pthanks">If somehow this site violates your rights, please contact me and I will remove the photos or information indicated.</p>
+            </div>
+            </div>
+        </main>
+
+        <footer class="clearfix">
+            <aside class="first">
+                <div class="newsletter">
+                    <form action="thanksnews.html" method="get" enctype="multipart/form-data" name="inform" class="myForm">
+                        <fieldset>
+                            <legend><span>Receive news every week</span></legend>
+                            <label><span>Full Name:</span><input name="fullname" type="text" value="" placeholder="Full Name" pattern="[a-zA-Z '-._]{5,40}" required title="Provide your full name - min 5 crt"></label>
+                            <label><span>Email:</span><input name="email" type="email" value="" placeholder="email@email.com" required title="Provide your email"></label>
+                        </fieldset>
+                        <input name="submitBut" type="submit" value="Join our list" class="submitBtn" onclick="thanks.html">
+                    </form>
+                </div>
+                <div class="social">
+                    <div class="provo">
+                    <h4>Join us on</h4>
+                    <div class="social-link">
+                        <div class="soclink">
+                            <a target="_blank" href="https://www.facebook.com"><img class="socialmedia"  src="images/facebook.png" alt="Link to Facebook"></a></div>
+                        <div class="soclink">
+                            <a target="_blank" href="https://www.twitter.com"><img class="socialmedia" src="images/twitter.png" alt="Link to Twitter"></a></div>
+                        <div class="soclink">
+                            <a target="_blank" href="https://plus.google.com"><img class="socialmedia" src="images/googleplus.png" alt="Link to GooglePlus"></a></div>
+                    </div>
+                    </div>
+                </div>
+            </aside>
+            <hr>
+            <aside class="middle">
+                <div class="box1">
+                    <h5>The Mountain Spoke</h5>
+                    <h6>3950 Valley Common Drive</h6>
+                    <h6>Bozeman, MT 59715 U.S.A.</h6>
+                </div>
+                <div class="box2">
+                    <h6>Mon - Sat:&nbsp;&nbsp; 8:00 - 8:00</h6>
+                    <h6>(999).999.9999</h6>
+                    <h6><a href="mailto:pag17002@byui.edu">contact@theurl.com</a></h6>
+                </div>
+            </aside>
+            <hr>
+            <aside class="last">
+                <p class="footer-bar">&copy;2018 The Mountain Spoke - All Rights Reserved</p>
+                <a class="footer-bar" href="resource-reference.html">Resource Reference Page</a>
+            </aside>
+        </footer>
+        <script src="scripts/activemenu.js"></script>
+        <script src="scripts/hamburger.js"></script>
+        <!--<script src="scripts/townsdata.js"></script>-->
+        <!--<script src="scripts/currentdate.js"></script>-->
+    </body>
+</html>
