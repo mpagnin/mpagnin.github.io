@@ -160,6 +160,7 @@ main .medfig img {
 	text-align: center;
 }
 #map iframe {
+	max-width: 100%;
 	box-shadow: 4px 4px 10px #666;
 }
 .thanksCont {
