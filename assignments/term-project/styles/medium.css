@@ -59,7 +59,11 @@
 		width: 100%;
 		margin: 0;
 	}
-	article #accMenu h2{
+	#accMenus {
+		width: 100%;
+		margin: 0;
+	}
+	article #accMenus h2{
 		margin-top: 0;
 	}
 	.event #eventPg {
