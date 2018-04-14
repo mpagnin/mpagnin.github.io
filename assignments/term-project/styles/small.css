@@ -48,15 +48,15 @@ p {
     align-items: center;
 }
 .intesta {
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 figure {
     margin: 0;
 }
 .intesta figure.imglogo {
-	margin: 0 1rem 0 0;
+    margin: 0 1rem 0 0;
 }
 header figure.imglogo img {
     max-width: 100%;
@@ -77,7 +77,7 @@ header button {
     color: #344141;
 }
 header button:hover {
-    color: FF9A00;
+    color: #FF9A00;
 }
 nav {
     background-color: #344141;
@@ -121,8 +121,8 @@ main .medfig img {
 .container {
     max-width: 96%;
     margin: auto;
-	display: flex;
-	flex-flow: column;
+    display: flex;
+    flex-flow: column;
 }
 .accordion {
     background-color: #FF9A00;
@@ -131,14 +131,14 @@ main .medfig img {
     padding: 15px;
     width: 100%;
     border: 1px solid #414141;
-	font-size: 1.2em;
+    font-size: 1.2em;
     text-align: left;
     outline: none;
     transition: 0.4s;
 }
 
 .active, .accordion:hover {
-    background-color: #FF3D00; 
+    background-color: #FF3D00;
 }
 
 .panel {
@@ -148,20 +148,20 @@ main .medfig img {
     overflow: hidden;
 }
 #eventA {
-	order: 0;
+    order: 0;
 }
 #eventB {
-	order: 1;
+    order: 1;
 }
 #eventC {
-	order: 2;
+    order: 2;
 }
 #map {
-	text-align: center;
+    text-align: center;
 }
 #map iframe {
-	max-width: 100%;
-	box-shadow: 4px 4px 10px #666;
+    max-width: 100%;
+    box-shadow: 4px 4px 10px #666;
 }
     section.service {
         padding: 1rem 0;
@@ -189,17 +189,17 @@ main .medfig img {
         padding: 0.3rem 0;
     }
 .thanksCont {
-	margin: 2% auto 4% auto;
-	max-width: 500px;
+    margin: 2% auto 4% auto;
+    max-width: 500px;
     text-align: left;
-	padding: 0.5em 1em;
-	background-color: #FFC263;
+    padding: 0.5em 1em;
+    background-color: #FFC263;
     color: #344141;
-	border: 2px solid #FF3D00;
-	border-radius: 3px;
+    border: 2px solid #FF3D00;
+    border-radius: 3px;
 }
 .thanksBtn {
-	margin: 2% auto 4% auto;
+    margin: 2% auto 4% auto;
 }
 figure.contfig img{
     max-width: 100%;
@@ -208,32 +208,32 @@ figure.contfig img{
     text-align: center;
 }
 .about, .event, .news {
-	margin-bottom: 2em;
-	padding: 2%;
+    margin-bottom: 2em;
+    padding: 2%;
     box-shadow: 3px 3px 8px 3px #344141;
 }
 .event {
     text-align: center;
-	padding-bottom: 5%;
+    padding-bottom: 5%;
 }
 .event h2 {
     color: #FF9A00;
     background-color: #344141;
-	margin-top: 0;
-	padding: 0.2em 0;
+    margin-top: 0;
+    padding: 0.2em 0;
 }
 .event p {
-	text-align: left;
+    text-align: left;
 }
 h2 {
-	text-align: center;
+    text-align: center;
 }
 
 .contFig {
-	text-align: center;
+    text-align: center;
 }
 .contFig p {
-	margin: 0.5em 0;
+    margin: 0.5em 0;
 }
 .linkEvent {
     color: #017277;
@@ -274,8 +274,8 @@ fieldset {
     padding: 0.3em;
 }
 .eventForm fieldset {
-	max-width: 520px;
-	padding: 0.5em;
+    max-width: 520px;
+    padding: 0.5em;
 }
 legend {
     display: block;
@@ -285,11 +285,11 @@ legend {
     color: #FF9A00;
 }
 .eventForm legend {
-	margin: 1em 0;
-	text-align: center;
-	padding: .5em;
+    margin: 1em 0;
+    text-align: center;
+    padding: .5em;
     border: #FF3D00 solid 2px;
-	color: #FF3D00;
+    color: #FF3D00;
     background-color: #FFFFFF;
     border-radius: .3em;
 }
@@ -298,7 +298,7 @@ label {
     text-align: left;
 }
 .eventForm label {
-	margin-bottom: 1em;
+    margin-bottom: 1em;
 }
 label span {
     display: block;
@@ -312,11 +312,11 @@ textarea {
     max-width: 500px;
 }
 .thbtn {
-	text-align: center;
-	margin: 2em 0 1em 0;
+    text-align: center;
+    margin: 2em 0 1em 0;
 }
 .fullriga h3 {
-	margin-bottom: 1em;
+    margin-bottom: 1em;
 }
 .submitBtn {
     -webkit-appearance: none; /* remove the apple mobile default styling */
@@ -330,7 +330,7 @@ textarea {
     padding: .1em 1.5em;
     background: #FF9A00;
     box-shadow: 4px 4px 10px #666;
-	text-align: center;
+    text-align: center;
 }
 .submitBtn:hover {
     background: #FF3D00;
@@ -347,7 +347,7 @@ textarea {
     padding: .3em;
     background: #FF9A00;
     box-shadow: 4px 4px 10px #666;
-	text-align: center;
+    text-align: center;
 }
 .goHomeBtn:hover {
     background: #FF3D00;
@@ -387,10 +387,10 @@ label input {
     outline: none;
 }
 .eventForm label input {
-	max-width: 500px;
+    max-width: 500px;
 }
 .eventForm label textarea {
-	margin: 0.3em 0;
+    margin: 0.3em 0;
 }
 /* The input that currently has the focus */
 input:focus {
